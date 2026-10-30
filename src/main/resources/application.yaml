@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: vetandes-backend
+  datasource:
+    url: ${VETANDES_DB_URL:jdbc:oracle:thin:@//localhost:1522/FREEPDB1}
+    username: ${VETANDES_DB_USER:VETANDES}
+    password: ${VETANDES_DB_PASSWORD:VetAndes2026}
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: false
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+server:
+  port: ${SERVER_PORT:8080}
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+app:
+  jwt:
+    secret: ${VETANDES_JWT_SECRET:dmV0YW5kZXMtY2xpbmljYS1zZWd1cmEtanVsdC0yMDI2LWZpcm1hLXBydWViYQ==}
+    expiracion-minutos: 60
