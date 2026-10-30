@@ -32,3 +32,23 @@
 ## Evidencias y trazabilidad
 
 Capturas: login, cada CRUD, atención con descuentos, rollback (ambos SELECT antes/después), reporte, 403 backend, acceso denegado SPA. Colección Postman: 200/201/400/401/403/404/409. README en ambos repos. PDF `ApellidoLP2ExamenU2.pdf`. Mínimo seis commits reales y tag `v1.0-examen-u2`.
+
+
+## Resultados de pruebas automatizadas - 30/10/2026
+
+Estudiante: Josias Pari Mamani
+
+Comando: .\mvnw.cmd test
+
+Resultado: BUILD SUCCESS
+
+- PermisosPorRolTest: 3 pruebas correctas.
+- AtencionCalculosTest: 3 pruebas correctas.
+- AtencionServiceTest: 2 pruebas correctas.
+- Total: 8 pruebas ejecutadas.
+- Fallos: 0.
+- Errores: 0.
+- Pruebas omitidas: 0.
+
+Se verificaron los permisos por rol, los calculos de atenciones
+y las pruebas del servicio de atenciones.
