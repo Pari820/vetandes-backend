@@ -52,3 +52,5 @@ Resultado: BUILD SUCCESS
 
 Se verificaron los permisos por rol, los calculos de atenciones
 y las pruebas del servicio de atenciones.
+Validacion Postman 30/10/2026: login ADMIN HTTP 200 OK; autenticacion JWT y permisos devueltos correctamente.
+Validacion Swagger: usuario VETERINARIO rechazado con HTTP 403 al crear mascota.
